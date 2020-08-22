@@ -1,0 +1,37 @@
+{
+  "name": "expressapi",
+  "version": "1.0.0",
+  "description": "Restful Api with ExpressJs and Postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch . --exec babel-node -- app",
+    "dev": "nodemon --exec npm start",
+    "create-tables": "babel-node ./models/migration createUserTable"
+  },
+  "author": "Mamus Eferha",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "make-runnable": "^1.3.6",
+    "moment": "^2.27.0",
+    "npm-run-all": "^4.1.5",
+    "pg": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "babel-watch": "^7.0.0",
+    "nodemon": "^2.0.4",
+    "morgan": "^1.10.0"
+  }
+}
